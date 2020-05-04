@@ -26,8 +26,13 @@ Different types of artifacts:
  * plugin: dynamic library to be consumed as a plugin.
 
 About types, the type of a node could be encoded in the node itself, but
-it is property of the relation, the same node can be consumed as
+it is also a property of the relation, the same node can be consumed as
 different types.
+ * Information that belongs to the node: header, static, dynamic; this
+   information is typically encoded in the package-id.
+ * Information that belongs to the relation: library, tool, plugin; only
+   the consumer can decide how it will use a requirement.
+Both coordinates have to be coherent. Who raises on this?
 
 
 Visibility
